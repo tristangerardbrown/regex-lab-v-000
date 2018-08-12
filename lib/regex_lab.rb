@@ -15,11 +15,11 @@ text.scan(/\b\w{5}\b/)
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
-if text.scan(/A-Z+\W\b/)
-  return true
-else
-  return false 
-end
+if text.match(/^[A-Z].+[\.!?]\b/) then
+    return true
+  else
+    return false
+  end
 
 def valid_phone_number?(phone)
 
