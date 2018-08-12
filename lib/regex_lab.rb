@@ -23,7 +23,7 @@ if text.match(/^[A-Z].+[\.!?]$/) then
 end
 
 def valid_phone_number?(phone)
-if phone.match(/^[1-9]{3}+[1-9]{3}+[1-9]{4}/)
+if phone.match(/^[1-9]{3}+[1-9]{3}+[1-9]{4}\b/)
   return true
 else
   return false
